@@ -6,7 +6,7 @@ import hash from './data.js'
 function App() {
   const [allSeries, setAllSeries] = useState([])
   const [seriesList, setSeriesList] = useState([])
-  const [postPerPage, setpostPerPage] = useState(4)
+  const [postPerPage] = useState(4)
   const [currentPage, setCurrentPage] = useState(1)
 
   useEffect(() => {
@@ -68,7 +68,7 @@ function App() {
 
       <div className='px-5'>
         {/* pagination item */}
-        <ul className='pagination'>
+        <ul className='pagination justify-content-center'>
           {pageArr.map((number) => {
             console.log(number)
             return (
